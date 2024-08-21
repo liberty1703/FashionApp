@@ -23,6 +23,7 @@ const Login = ({ navigation }) => {
       <FormButton title={"Login"} onPress={() => navigation.navigate("Main", { screen: "Bottom" })} />
 
       {/* DOWN PART  */}
+
       <View
         style={{
           flexDirection: 'row',

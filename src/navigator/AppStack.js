@@ -28,6 +28,7 @@ const AppStack = () => {
             <Stack.Screen name='FavouriteScreen' component={FavouriteScreen} />
             <Stack.Screen name='DetailScreen' component={DetailScreen} />
             <Stack.Screen name='ThankyouScreen' component={ThankyouScreen} />
+
         </Stack.Navigator>
     )
 }
