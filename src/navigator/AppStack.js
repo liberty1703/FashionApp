@@ -1,0 +1,37 @@
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import Welcome from '../Welcome';
+import Dashboard from '../Dashboard';
+import BottomStack from './BottomStack';
+import ProductDetails from '../screens/Home/ProductDetails';
+import FavouriteScreen from '../screens/Favourite/FavouriteScreen';
+import DetailScreen from '../screens/DeliveryDetails/DetailScreen';
+import { Screen } from 'react-native-screens';
+import ThankyouScreen from '../screens/Payment/ThankyouScreen';
+
+
+
+
+
+
+
+
+
+const AppStack = () => {
+    const Stack = createNativeStackNavigator();
+    return (
+        <Stack.Navigator screenOptions={{ headerShown: false }}>
+            <Stack.Screen name='Bottom' component={BottomStack} />
+
+            <Stack.Screen name='ProductDetails' component={ProductDetails} />
+            <Stack.Screen name='FavouriteScreen' component={FavouriteScreen} />
+            <Stack.Screen name='DetailScreen' component={DetailScreen} />
+            <Stack.Screen name='ThankyouScreen' component={ThankyouScreen} />
+        </Stack.Navigator>
+    )
+}
+Screen
+export default AppStack
+
+const styles = StyleSheet.create({})
