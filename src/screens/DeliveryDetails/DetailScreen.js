@@ -44,13 +44,13 @@ const DetailScreen = ({ navigation }) => {
             </Text>
             <View style={{ flexDirection: 'row', marginLeft: 30, }}>
                 <TouchableOpacity style={styles.box}>
-                    <Image source={require('../../../assets/images/paypal.png')} style={{ height: 30, width: 30 }} />
+                    <Image source={require('../../../assets/images/pa.png')} style={{ height: 30, width: 30 }} />
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.box}>
-                    <Image source={require('../../../assets/images/visa1.png')} style={{ height: 30, width: 35 }} />
+                    <Image source={require('../../../assets/images/vs.png')} style={{ height: 30, width: 35 }} />
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.box}>
-                    <Image source={require('../../../assets/images/master.png')} style={{ height: 30, width: 50 }} />
+                    <Image source={require('../../../assets/images/ma.png')} style={{ height: 30, width: 50 }} />
                 </TouchableOpacity>
             </View>
 
@@ -99,7 +99,7 @@ const DetailScreen = ({ navigation }) => {
             </View>
             <FormButton2
                 title={'Payment'}
-                onPress={() => navigation.navigate('Received')}
+                onPress={() => navigation.navigate('ThankyouScreen')}
             />
         </View >
     )

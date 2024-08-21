@@ -77,7 +77,7 @@ const HomeScreen = ({ navigation }) => {
                 </Text>
 
                 <View style={{ marginLeft: "auto" }}>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => navigation.navigate("NotificationScreen")}>
                         <Image source={require('../../../assets/images/notification.png')}
                             style={{ height: 20, width: 20, tintColor: 'grey', }}
                         />
@@ -89,7 +89,7 @@ const HomeScreen = ({ navigation }) => {
             {/* SEARCH BOX */}
             <View style={styles.searchbtn}>
                 <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-around' }}>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => navigation.navigate('SearchScreen')}>
                         <Image source={require('../../../assets/images/search.png')}
                             style={{ height: 20, width: 20, tintColor: 'grey', }}
                         />

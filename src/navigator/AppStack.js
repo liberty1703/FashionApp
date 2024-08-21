@@ -10,6 +10,9 @@ import DetailScreen from '../screens/DeliveryDetails/DetailScreen';
 import { Screen } from 'react-native-screens';
 import ThankyouScreen from '../screens/Payment/ThankyouScreen';
 
+import SearchScreen from '../screens/Search/search';
+import NotificationScreen from '../screens/Notification/NotificationScreen';
+
 
 
 
@@ -28,7 +31,8 @@ const AppStack = () => {
             <Stack.Screen name='FavouriteScreen' component={FavouriteScreen} />
             <Stack.Screen name='DetailScreen' component={DetailScreen} />
             <Stack.Screen name='ThankyouScreen' component={ThankyouScreen} />
-
+            <Stack.Screen name='NotificationScreen' component={NotificationScreen} />
+            <Stack.Screen name='SearchScreen' component={SearchScreen} />
         </Stack.Navigator>
     )
 }
