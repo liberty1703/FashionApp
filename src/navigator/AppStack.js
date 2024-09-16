@@ -12,6 +12,8 @@ import ThankyouScreen from '../screens/Payment/ThankyouScreen';
 
 import SearchScreen from '../screens/Search/search';
 import NotificationScreen from '../screens/Notification/NotificationScreen';
+import TodoFirstpage from '../screens/ToDoList/TodoFirstpage';
+import AddScreen from '../screens/ToDoList/AddScreen';
 
 
 
@@ -33,6 +35,8 @@ const AppStack = () => {
             <Stack.Screen name='ThankyouScreen' component={ThankyouScreen} />
             <Stack.Screen name='NotificationScreen' component={NotificationScreen} />
             <Stack.Screen name='SearchScreen' component={SearchScreen} />
+            <Stack.Screen name='TodoFirstpage' component={TodoFirstpage} />
+            <Stack.Screen name='AddScreen' component={AddScreen} />
         </Stack.Navigator>
     )
 }

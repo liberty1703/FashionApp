@@ -64,6 +64,12 @@ const Login = ({ navigation }) => {
             style={{ height: 40, width: 40, }} />
         </TouchableOpacity>
       </View>
+
+      {/* {TODO LIST BUTTON} */}
+
+      <TouchableOpacity onPress={() => navigation.navigate("Main", { screen: "TodoFirstpage" })} style={styles.addbtn}>
+        <Image source={require('../assets/images/add.png')} style={{ height: 40, width: 40, alignSelf: 'center', justifyContent: "center", tintColor: 'white' }} />
+      </TouchableOpacity>
     </View>
   );
 };
@@ -94,5 +100,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
 
     backgroundColor: '#D8D8D8',
+  },
+  addbtn: {
+    height: 50,
+    width: 50,
+    borderRadius: 25,
+    backgroundColor: "blue",
+    justifyContent: "center",
+    alignSelf: "center",
+    marginTop: 60
+
   }
 });
